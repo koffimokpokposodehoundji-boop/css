@@ -1,0 +1,115 @@
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  background-color: beige;
+}
+
+nav {
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  padding: 2px;
+}
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.all {
+  background-image: url(tyt.jpg);
+  background-size: cover;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  height: 550px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#ch {
+  text-align: left;
+  font-weight: 800;
+  font-size: 0.5em;
+  padding-left: 10px;
+  position:absolute;
+  top:20px
+}
+
+.rt {
+  color: white;
+  background: #5b7fc9;
+  border-radius: 9px;
+  text-decoration: none;
+  font-size: 0.80em;
+  font-weight: 800;
+  padding: 10px 15px;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+.rt:hover { color: yellow; }
+a:hover { color: green; }
+
+
+.para, .vc, .fdc, .gal, .gat, .set, .zb {
+  position: absolute;
+}
+
+.para { left: 350px; top: 25em; width: 300px; padding: 50px; }
+.vc { left: 350px; top: 105em; width: 300px; padding: 50px; }
+.vf, .gtf { left: 400px; top: 150px; position: relative; font-size: 20px; color: Darkblue; }
+.zb { right: 780px; top: 900px; font-size: 20px; color: Darkblue; }
+.bg { left: 600px; top: -3em; position: relative; flex: 1; height: auto; }
+.gal { left: 390px; top: 105px; }
+.gat { left: 800px; top: 105px; }
+.set { left: 800px; top: 620px; }
+.fdc { right: 850px; top: 60em; width: 300px; padding: 50px; }
+
+
+@media screen and (max-width: 768px) {
+  
+  
+  nav, .para, .vc, .fdc, .gal, .gat, .set, .zb, .vf, .gtf, .bg {
+    position: static !important;
+    width: 90% !important;
+    margin: 10px auto !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    text-align: center;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  li {
+    display: block; 
+    padding: 10px;
+  }
+
+  .all {
+    height: auto;
+    padding: 50px 20px;
+  }
+
+  
+  .para, .vc {
+    height: auto !important;
+    padding: 20px !important;
+  }
+
+  h1 {
+    text-align: center;
+    padding-left: 0;
+	
+  }
+}
